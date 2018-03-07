@@ -10,7 +10,7 @@ export default (compiler, opts) => {
       writeHead: (status, headers) => {
         ctx.body = stream
         ctx.status = status
-        ctx.set(headers)       
+        ctx.set(headers)
       }
     }, next)
   }
